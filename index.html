@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    Content Security Policy: a safety rule enforced by the browser itself.
+    The page may only load its own files and is forbidden from making ANY
+    network connection, so event log data cannot be sent anywhere, even by mistake.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' file:; style-src 'self' file:; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+  <meta name="theme-color" content="#0D1316">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Educational Windows Security Event Log triage tool. Upload an Event Viewer CSV export and see which activity deserves investigation, with every finding explained. Analysis happens entirely in your browser.">
+  <title>Windows Security Event Log Triage Tool</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z' fill='%232DD4BF'/%3E%3Cpath d='M8 9h8M8 12.5h8M8 16h5' stroke='%230D1316' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z" fill="currentColor" opacity=".16"/>
+          <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M8.5 9h7M8.5 12.5h7M8.5 16h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <span class="brand-name">Windows Security Event Log Triage Tool</span>
+          <span class="brand-sub">Educational SOC triage lab</span>
+        </div>
+      </div>
+      <span class="local-badge" title="Your event logs never leave this device">
+        <span class="dot" aria-hidden="true"></span> 100% local analysis
+      </span>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Windows Security Event Log Triage Tool</p>
+      <h1>Learn how analysts read Windows security events.</h1>
+      <p class="lead">Export events from Windows Event Viewer as CSV and drop them in. The tool recognises the Event IDs that matter, links related events together, and explains each finding: what happened, why it may deserve investigation, what innocent reasons could explain it, and what to check next.</p>
+    </section>
+
+    <div class="notices">
+      <div class="notice notice-info" role="note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <p><strong>Your Windows security logs are analysed locally in your browser. Files are not uploaded or transmitted anywhere.</strong> There are no servers, analytics, cookies or tracking, and the page is technically blocked from making network requests.</p>
+      </div>
+      <div class="notice notice-warn" role="note">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3zm0 6v5m0 3v.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p><strong>Educational SOC triage tool. Findings indicate activity that may deserve investigation and do not prove malicious behaviour.</strong> Only analyse logs from systems you own or are authorised to investigate.</p>
+      </div>
+    </div>
+
+    <div class="setup-grid">
+      <!-- Load events -->
+      <section class="card" aria-labelledby="load-title">
+        <div class="card-head">
+          <h2 id="load-title"><span class="step-num" aria-hidden="true">1</span> Load events</h2>
+        </div>
+
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="file-input" class="file-input" accept=".csv,text/csv" aria-describedby="drop-help">
+          <label for="file-input" class="dropzone-label">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0-4 4m4-4 4 4M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="dropzone-title">Upload Event Viewer CSV</span>
+            <span class="dropzone-sub" id="drop-help">Drag and drop a .csv file here, or click to choose one. Up to 50 MB.</span>
+          </label>
+        </div>
+
+        <div class="demo-block">
+          <h3 class="mini-title">No Windows logs to hand? Try the demo data</h3>
+          <div class="button-row" role="group" aria-label="Load demo data">
+            <button type="button" class="btn btn-primary" data-sample="normal">Load Normal Sample</button>
+            <button type="button" class="btn btn-primary" data-sample="failed">Load Failed Logons Sample</button>
+            <button type="button" class="btn btn-primary" data-sample="guessing">Load Password Guessing Sample</button>
+            <button type="button" class="btn btn-primary" data-sample="persistence">Load Privilege Escalation Sample</button>
+            <button type="button" class="btn btn-primary" data-sample="mixed">Load Mixed SOC Sample</button>
+          </div>
+          <div class="button-row button-row-small" role="group" aria-label="Load extra test files">
+            <button type="button" class="btn btn-ghost btn-small" data-sample="powershell">PowerShell export format</button>
+            <button type="button" class="btn btn-ghost btn-small" data-sample="malformed">Broken CSV</button>
+            <button type="button" class="btn btn-ghost btn-small" data-sample="security">HTML injection test</button>
+          </div>
+        </div>
+
+        <details class="demo-script">
+          <summary>Demo walkthrough (five tests)</summary>
+          <ol>
+            <li><strong>Normal activity.</strong> Click <em>Load Normal Sample</em>. A day of logons, logoffs and ordinary programs. Two users mistype a password, but no rule fires: mostly informational activity.</li>
+            <li><strong>Repeated failures.</strong> Click <em>Load Failed Logons Sample</em>. sam.taylor fails to log on 7 times in about 3 minutes, raising <em>Repeated Failed Logons</em>.</li>
+            <li><strong>Failures, then success.</strong> Click <em>Load Password Guessing Sample</em>. jo.rivera fails 9 times and then logs on from the same IP, raising <em>Possible Password Guessing Followed By Success</em>.</li>
+            <li><strong>New account, new privileges.</strong> Click <em>Load Privilege Escalation Sample</em>. temp-admin is created (4720) and a minute later added to Administrators (4732), raising <em>New Account Granted Privileges</em>.</li>
+            <li><strong>Log cleared, and the full story.</strong> Click <em>Load Mixed SOC Sample</em>. Find <em>Security Audit Log Cleared</em> (1102), then open <em>Administrative / Privilege Activity</em> to see how one chain of events connects. <strong>The individual events matter, but the real value comes from understanding how they relate to one another.</strong></li>
+          </ol>
+        </details>
+
+        <div id="file-status" class="file-status" role="status" aria-live="polite" hidden></div>
+      </section>
+
+      <!-- Settings -->
+      <section class="card" aria-labelledby="settings-title">
+        <div class="card-head">
+          <h2 id="settings-title"><span class="step-num" aria-hidden="true">2</span> Settings</h2>
+          <button type="button" class="btn btn-ghost btn-small" id="reset-settings">Reset Defaults</button>
+        </div>
+        <p class="muted small settings-intro">Changes apply instantly to the loaded file.</p>
+        <form id="settings-form" class="threshold-grid" novalidate>
+          <div class="field">
+            <label for="s-failures">Failed login threshold</label>
+            <input type="number" id="s-failures" name="failures" min="2" max="10000" step="1" inputmode="numeric" aria-describedby="s-failures-help">
+            <span class="field-help" id="s-failures-help">Failures for one account before an alert. Default 5.</span>
+          </div>
+          <div class="field">
+            <label for="s-window">Failed login time window (minutes)</label>
+            <input type="number" id="s-window" name="windowMinutes" min="0" max="10080" step="1" inputmode="numeric" aria-describedby="s-window-help">
+            <span class="field-help" id="s-window-help">Failures must happen within this many minutes. 0 counts the whole file. Default 10.</span>
+          </div>
+          <div class="field">
+            <label for="s-spray">Accounts tried from one source</label>
+            <input type="number" id="s-spray" name="sprayAccounts" min="2" max="10000" step="1" inputmode="numeric" aria-describedby="s-spray-help">
+            <span class="field-help" id="s-spray-help">Different accounts failing from one IP (password spraying). Default 4.</span>
+          </div>
+          <div class="field">
+            <label for="s-dates">Date format in the file</label>
+            <select id="s-dates" name="dateOrder" aria-describedby="s-dates-help">
+              <option value="auto">Detect automatically</option>
+              <option value="mdy">Month/day/year (US)</option>
+              <option value="dmy">Day/month/year (UK, India, EU)</option>
+            </select>
+            <span class="field-help" id="s-dates-help">Event Viewer uses your Windows region setting.</span>
+          </div>
+        </form>
+        <div class="callout">
+          <p><strong>Security thresholds vary by environment. These values are educational defaults rather than universal SOC detection rules.</strong> A shared kiosk may see many honest typos every hour, while three failures on a domain admin account at 3 a.m. might deserve a call.</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Results (filled in by js/app.js) -->
+    <section id="results" class="results" aria-labelledby="results-title" hidden>
+      <div class="results-head">
+        <h2 id="results-title"><span class="step-num" aria-hidden="true">3</span> Triage report</h2>
+        <span id="demo-badge" class="demo-badge" hidden>Demo Data</span>
+      </div>
+      <p class="results-source muted" id="results-source"></p>
+
+      <div class="lesson-banner">
+        <p><strong>A detection is a reason to investigate, not proof that an attacker is present.</strong></p>
+      </div>
+
+      <div id="analysis-notes"></div>
+
+      <h3 class="section-title">Dashboard</h3>
+      <div id="overview" class="stat-grid"></div>
+
+      <h3 class="section-title">Investigation score</h3>
+      <div id="score-panel"></div>
+
+      <div class="alerts-head">
+        <h3 class="section-title" id="alerts-title">Findings</h3>
+        <span class="muted small" id="alert-count" aria-live="polite"></span>
+      </div>
+
+      <form id="filters" class="filters" role="search" aria-label="Filter findings and events">
+        <div class="field">
+          <label for="f-id">Event ID</label>
+          <select id="f-id"></select>
+        </div>
+        <div class="field">
+          <label for="f-account">Account</label>
+          <select id="f-account"></select>
+        </div>
+        <div class="field">
+          <label for="f-severity">Severity</label>
+          <select id="f-severity">
+            <option value="">All severities</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+            <option value="Informational">Informational</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-ip">Source IP</label>
+          <select id="f-ip"></select>
+        </div>
+        <div class="field">
+          <label for="f-type">Event type</label>
+          <select id="f-type"></select>
+        </div>
+        <div class="field field-wide">
+          <label for="f-search">Search</label>
+          <input type="search" id="f-search" placeholder="Account, IP, group, process or any text" autocomplete="off">
+        </div>
+        <div class="field field-button">
+          <button type="button" class="btn btn-ghost btn-small" id="clear-filters">Clear filters</button>
+        </div>
+      </form>
+
+      <div id="alerts" class="alerts"></div>
+
+      <section class="card admin-card" aria-labelledby="admin-title">
+        <h3 id="admin-title">Administrative / Privilege Activity</h3>
+        <p class="muted small">Account creations, deletions, group changes, service installs and log clearing in this file, side by side in time order. Events are only linked when the same account name appears in them; unrelated users are never joined together.</p>
+        <div id="admin-linked"></div>
+        <div class="table-wrap">
+          <table class="data-table" id="admin-table">
+            <caption class="sr-only">Administrative and privilege events in time order</caption>
+            <thead><tr><th scope="col">Time</th><th scope="col">Event ID</th><th scope="col">What happened</th><th scope="col">Performed by</th><th scope="col">Severity</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="chart-grid">
+        <section class="card chart-card" aria-labelledby="top-acc-title">
+          <h3 id="top-acc-title">Top accounts by event count</h3>
+          <p class="muted small" id="top-acc-note">Select an account to filter the report.</p>
+          <ol id="top-accounts" class="bar-list"></ol>
+        </section>
+        <section class="card chart-card" aria-labelledby="top-fail-title">
+          <h3 id="top-fail-title">Top accounts with failed logons</h3>
+          <p class="muted small">Event ID 4625 per account.</p>
+          <ol id="top-failed" class="bar-list"></ol>
+        </section>
+        <section class="card chart-card" aria-labelledby="ids-title">
+          <h3 id="ids-title">Most common Event IDs</h3>
+          <p class="muted small">Select an ID to filter. Teal IDs are analysed by this tool.</p>
+          <ol id="top-ids" class="bar-list"></ol>
+        </section>
+      </div>
+
+      <section class="card" aria-labelledby="timeline-title">
+        <div class="card-head">
+          <h3 id="timeline-title">Timeline of noteworthy activity</h3>
+          <span class="muted small" id="timeline-count"></span>
+        </div>
+        <p class="muted small" id="timeline-note">Events linked to a finding, plus all administrative events, oldest first. Uses the filters above.</p>
+        <ol id="timeline" class="timeline"></ol>
+      </section>
+
+      <section class="card" aria-labelledby="events-title">
+        <div class="card-head">
+          <h3 id="events-title">Event explorer</h3>
+          <span class="muted small" id="event-count"></span>
+        </div>
+        <p class="muted small">Every event in the file, oldest first, using the filters above. Shows up to 250 rows. Open "Full description" to read the original text.</p>
+        <div class="table-wrap table-scroll">
+          <table class="data-table event-table" id="event-table">
+            <caption class="sr-only">Events matching the current filters</caption>
+            <thead><tr><th scope="col">Time</th><th scope="col">Event ID</th><th scope="col">What it is</th><th scope="col">Account</th><th scope="col">Source IP</th><th scope="col">Details</th><th scope="col">Severity</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="coverage-title">
+        <h3 id="coverage-title">Rule coverage</h3>
+        <p class="muted small">Which rules had the events they need in this file. A rule that did not run is not a clean result: it means the events it looks for are not present, perhaps because that auditing is switched off.</p>
+        <div class="table-wrap">
+          <table class="data-table" id="coverage-table">
+            <caption class="sr-only">Detection rules and whether they ran</caption>
+            <thead><tr><th scope="col">Rule</th><th scope="col">Event IDs</th><th scope="col">Points</th><th scope="col">Status</th><th scope="col">Findings</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <!-- Education -->
+    <section class="card learn" aria-labelledby="analyst-title">
+      <h2 id="analyst-title">How to Think Like a SOC Analyst</h2>
+      <p class="key-lesson"><strong>One security event rarely tells the entire story. Analysts build context by correlating multiple events.</strong></p>
+      <div class="learn-grid">
+        <ol class="workflow">
+          <li><strong>Identify the event.</strong> Which Event ID is it, and which log did it come from?</li>
+          <li><strong>Understand what happened.</strong> Read the description in plain words: a logon, a failure, a group change.</li>
+          <li><strong>Identify the affected user or system.</strong> Which account, which computer, which source IP?</li>
+          <li><strong>Determine whether the activity is expected.</strong> Is this person in IT? Is it their normal working time and device?</li>
+          <li><strong>Look for related events.</strong> What happened just before and just after, for the same account or source?</li>
+          <li><strong>Correlate authentication and privilege activity.</strong> Failures followed by success, or a new account that quickly gains admin rights, tell a bigger story than either event alone.</li>
+          <li><strong>Gather additional evidence.</strong> Tickets, change requests, EDR, VPN, MFA and other servers' logs.</li>
+          <li><strong>Decide whether escalation is required.</strong> Close it as benign, keep watching, or escalate to incident response.</li>
+        </ol>
+        <div class="learn-side">
+          <h3>A detection is a reason to investigate</h3>
+          <p>A detection is a reason to investigate, not proof that an attacker is present. Every finding in this tool lists a possible benign explanation, because in real SOCs most alerts turn out to be ordinary IT activity. The skill is ruling things in or out with evidence.</p>
+          <h3>Why severity is not certainty</h3>
+          <p>Severity here means <em>investigative priority</em>: how soon an analyst might want to look. A High finding can be benign and a Low one can be the first sign of something serious. The investigation score simply adds up the points shown, so you can see exactly why something ranks where it does. It is an educational prioritisation mechanism, not a mathematical probability of compromise.</p>
+          <h3>Absence is not evidence</h3>
+          <p>If an event is missing, that does not prove the activity did not happen. Auditing may be switched off, or the log may have been cleared or overwritten.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card learn" aria-labelledby="ids-ref-title">
+      <h2 id="ids-ref-title">Event ID reference for beginners</h2>
+      <p class="muted">The handful of Event IDs this tool analyses. Windows has hundreds more; these are the ones new analysts meet most often.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Event IDs analysed by this tool</caption>
+          <thead><tr><th scope="col">Event ID</th><th scope="col">Name</th><th scope="col">In plain English</th><th scope="col">Log</th><th scope="col">Default severity</th></tr></thead>
+          <tbody id="id-reference"></tbody>
+        </table>
+      </div>
+      <details class="mini-details">
+        <summary>Logon types (seen in 4624 and 4625)</summary>
+        <ul id="logon-types" class="plain-list"></ul>
+      </details>
+    </section>
+
+    <section class="card learn" aria-labelledby="export-title">
+      <h2 id="export-title">Getting a CSV from Windows Event Viewer</h2>
+      <ol class="steps-inline">
+        <li>Open <strong>Event Viewer</strong> (press Windows key, type <kbd>Event Viewer</kbd>, run it as administrator).</li>
+        <li>Go to <strong>Windows Logs &rsaquo; Security</strong>.</li>
+        <li>Optional: click <strong>Filter Current Log&hellip;</strong> and enter the IDs you want, for example <code>4624,4625,4720,4726,4728,4732,1102,4688</code>.</li>
+        <li>Click <strong>Save Filtered Log File As&hellip;</strong> (or <strong>Save All Events As&hellip;</strong>) and choose <strong>CSV (Comma Separated)</strong>.</li>
+        <li>Upload the CSV into this tool.</li>
+      </ol>
+      <p class="muted small">To include PowerShell (4104) and service (7045) events too, create a <strong>Custom View</strong> covering the Security, System and Microsoft-Windows-PowerShell/Operational logs and save that as CSV. The README also shows a PowerShell command that exports the same events.</p>
+      <div class="callout mac-callout">
+        <p><strong>Using a Mac?</strong> macOS has no Event Viewer and does not produce Windows Event IDs. Use the demo buttons above, or run Windows in a free virtual machine (for example UTM on Apple Silicon) and export the Security log from there. The README has step-by-step instructions.</p>
+      </div>
+    </section>
+
+    <section class="card learn" aria-labelledby="rules-title">
+      <h2 id="rules-title">The detection and correlation rules</h2>
+      <p class="muted">Simple, transparent rules, no machine learning. Each finding shows the points it adds to the investigation score.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption class="sr-only">Detection rule reference</caption>
+          <thead><tr><th scope="col">Rule</th><th scope="col">What it looks for</th><th scope="col">Points</th></tr></thead>
+          <tbody id="rules-reference"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>Windows Security Event Log Triage Tool</strong> &middot; Educational SOC triage tool. Findings indicate activity that may deserve investigation and do not prove malicious behaviour.</p>
+      <p>Only analyse logs from systems you own or are authorised to investigate. Your Windows event logs are analysed locally in your browser and are not uploaded anywhere.</p>
+    </div>
+  </footer>
+
+  <script src="js/csv-parser.js"></script>
+  <script src="js/analyser.js"></script>
+  <script src="js/samples.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

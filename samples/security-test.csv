@@ -1,0 +1,325 @@
+Keywords,Date and Time,Source,Event ID,Task Category
+Classic,10/24/2026 8:15:00 AM,Service Control Manager,7045,None,"A service was installed in the system.
+
+Service Name:  <marquee>svc</marquee>
+Service File Name:  C:\Users\Public\<script>x</script>.exe
+Service Type:  user mode service
+Service Start Type:  auto start
+Service Account:  LocalSystem"
+Audit Success,10/24/2026 8:14:00 AM,Microsoft-Windows-Eventlog,1102,Log clear,"The audit log was cleared.
+Subject:
+	Security ID:	LAB\{{constructor.constructor('alert(5)')()}}
+	Account Name:	{{constructor.constructor('alert(5)')()}}
+	Domain Name:	LAB
+	Logon ID:	0x8B21C"
+Audit Success,10/24/2026 8:13:00 AM,Microsoft-Windows-Security-Auditing,4732,Security Group Management,"A member was added to a security-enabled local group.
+
+Subject:
+	Security ID:		LAB\admin
+	Account Name:		admin
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Member:
+	Security ID:		LAB\""><script>alert(4)</script>
+	Account Name:		-
+
+Group:
+	Security ID:		BUILTIN\<u>Administrators</u>
+	Group Name:		<u>Administrators</u>
+	Group Domain:		Builtin
+
+Additional Information:
+	Privileges:		-"
+Audit Success,10/24/2026 8:12:00 AM,Microsoft-Windows-Security-Auditing,4720,User Account Management,"A user account was created.
+
+Subject:
+	Security ID:		LAB\<iframe src=javascript:alert(3)>
+	Account Name:		<iframe src=javascript:alert(3)>
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+New Account:
+	Security ID:		LAB\""><script>alert(4)</script>
+	Account Name:		""><script>alert(4)</script>
+	Account Domain:		LAB
+
+Attributes:
+	SAM Account Name:	""><script>alert(4)</script>
+	Display Name:		<value not set>
+	User Principal Name:	-
+	Home Directory:		<value not set>
+	Password Last Set:	<never>
+	Account Expires:		<never>
+	User Account Control:	
+		Account Disabled
+		'Password Not Required' - Enabled
+		'Normal Account' - Enabled
+
+Additional Information:
+	Privileges		-"
+Audit Success,10/24/2026 8:11:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\<img src=x onerror=alert(1)>
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	<b>bold</b>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Failure,10/24/2026 8:10:25 AM,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	<script>alert(""ws"")</script>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Audit Failure,10/24/2026 8:10:20 AM,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	<script>alert(""ws"")</script>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Audit Failure,10/24/2026 8:10:15 AM,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	<script>alert(""ws"")</script>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Audit Failure,10/24/2026 8:10:10 AM,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	<script>alert(""ws"")</script>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Audit Failure,10/24/2026 8:10:05 AM,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	<script>alert(""ws"")</script>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Audit Failure,10/24/2026 8:10:00 AM,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		<img src=x onerror=alert(1)>
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	<script>alert(""ws"")</script>
+	Source Network Address:	10.0.0.5""><svg onload=alert(2)>
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."

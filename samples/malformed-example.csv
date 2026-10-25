@@ -1,0 +1,3 @@
+Keywords,Date and Time,Source,Task Category
+Audit Success,10/24/2026 9:15:02 AM,Microsoft-Windows-Security-Auditing,Logon,"An account was successfully logged on.
+Audit Failure,10/24/2026 9:16:40 AM,Microsoft-Windows-Security-Auditing,Logon,An account failed to log on.

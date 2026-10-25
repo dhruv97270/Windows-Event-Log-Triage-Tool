@@ -1,0 +1,1330 @@
+Keywords,Date and Time,Source,Event ID,Task Category
+Audit Success,10/24/2026 11:16:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		10
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		WS-LAB-01\temp-admin
+	Account Name:		temp-admin
+	Account Domain:		WS-LAB-01
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-IT-01
+	Source Network Address:	10.10.30.5
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 11:15:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49802
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 11:14:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 11:05:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49802
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 11:05:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 10:53:01 AM,Microsoft-Windows-Security-Auditing,4732,Security Group Management,"A member was added to a security-enabled local group.
+
+Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Member:
+	Security ID:		WS-LAB-01\temp-admin
+	Account Name:		-
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Additional Information:
+	Privileges:		-"
+Audit Success,10/24/2026 10:53:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\net.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\cmd.exe
+	Process Command Line:	net localgroup Administrators temp-admin /add
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 10:52:01 AM,Microsoft-Windows-Security-Auditing,4720,User Account Management,"A user account was created.
+
+Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+New Account:
+	Security ID:		WS-LAB-01\temp-admin
+	Account Name:		temp-admin
+	Account Domain:		WS-LAB-01
+
+Attributes:
+	SAM Account Name:	temp-admin
+	Display Name:		<value not set>
+	User Principal Name:	-
+	Home Directory:		<value not set>
+	Password Last Set:	<never>
+	Account Expires:		<never>
+	User Account Control:	
+		Account Disabled
+		'Password Not Required' - Enabled
+		'Normal Account' - Enabled
+
+Additional Information:
+	Privileges		-"
+Audit Success,10/24/2026 10:52:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\net.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\cmd.exe
+	Process Command Line:	net user temp-admin /add
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 10:50:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		10
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-IT-01
+	Source Network Address:	10.10.30.5
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 10:25:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	10.10.20.24
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 10:15:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	10.10.20.23
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 10:05:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 10:04:00 AM,Microsoft-Windows-Security-Auditing,4738,User Account Management,"A user account was changed.
+
+Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Target Account:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+
+Changed Attributes:
+	Display Name:		Priya Shah (Finance)"
+Audit Success,10/24/2026 10:03:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\mmc.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Windows\system32\mmc.exe"" ""C:\Windows\system32\lusrmgr.msc""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 10:00:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		10
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-IT-01
+	Source Network Address:	10.10.30.5
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 9:55:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 9:15:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	10.10.20.24
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 9:05:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	10.10.20.23
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 8:55:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 8:45:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 8:39:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:35:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:33:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:32:01 AM,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Audit Success,10/24/2026 8:32:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-04$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 8:30:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:26:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:24:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:23:01 AM,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Audit Success,10/24/2026 8:23:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-03$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 8:21:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:17:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:15:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:14:01 AM,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Audit Success,10/24/2026 8:14:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-02$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 8:12:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:08:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:06:00 AM,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Audit Success,10/24/2026 8:05:01 AM,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Audit Success,10/24/2026 8:05:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Audit Success,10/24/2026 7:30:00 AM,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."

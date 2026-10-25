@@ -1,0 +1,3021 @@
+Level,Date and Time,Source,Event ID,Task Category
+Information,24/10/2026 21:02:41,Microsoft-Windows-Eventlog,1102,Log clear,"The audit log was cleared.
+Subject:
+	Security ID:	LAB\support-tmp
+	Account Name:	support-tmp
+	Domain Name:	LAB
+	Logon ID:	0x8B21C"
+Information,24/10/2026 20:55:41,Service Control Manager,7045,None,"A service was installed in the system.
+
+Service Name:  WinUpdateHelper
+Service File Name:  C:\Users\Public\Libraries\updhelper.exe
+Service Type:  user mode service
+Service Start Type:  auto start
+Service Account:  LocalSystem"
+Warning,24/10/2026 20:52:43,Microsoft-Windows-PowerShell,4104,Execute a Remote Command,"Creating Scriptblock text (1 of 1):
+$d = [System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String('VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAiAEwAYQBiACAAZABlAG0AbwA6ACAAaABhAHIAbQBsAGUAcwBzACAAdAByAGEAaQBuAGkAbgBnACAAcwB0AHIAaQBuAGcAIgA='))
+I`n`v`o`k`e`-`E`x`p`r`e`s`s`i`o`n $d
+
+ScriptBlock ID: 3f6a1c2e-8b7d-4e0a-9c51-2d7e6b4a9f10
+Path: "
+Information,24/10/2026 20:52:41,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\support-tmp
+	Account Name:		support-tmp
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\cmd.exe
+	Process Command Line:	powershell.exe -NoProfile -WindowStyle Hidden -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAiAEwAYQBiACAAZABlAG0AbwA6ACAAaABhAHIAbQBsAGUAcwBzACAAdAByAGEAaQBuAGkAbgBnACAAcwB0AHIAaQBuAGcAIgA=
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 20:50:41,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		10
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\support-tmp
+	Account Name:		support-tmp
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 20:46:11,Microsoft-Windows-Security-Auditing,4732,Security Group Management,"A member was added to a security-enabled local group.
+
+Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Member:
+	Security ID:		LAB\support-tmp
+	Account Name:		-
+
+Group:
+	Security ID:		BUILTIN\Remote Desktop Users
+	Group Name:		Remote Desktop Users
+	Group Domain:		Builtin
+
+Additional Information:
+	Privileges:		-"
+Information,24/10/2026 20:45:41,Microsoft-Windows-Security-Auditing,4732,Security Group Management,"A member was added to a security-enabled local group.
+
+Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Member:
+	Security ID:		LAB\support-tmp
+	Account Name:		-
+
+Group:
+	Security ID:		BUILTIN\Administrators
+	Group Name:		Administrators
+	Group Domain:		Builtin
+
+Additional Information:
+	Privileges:		-"
+Information,24/10/2026 20:44:42,Microsoft-Windows-Security-Auditing,4720,User Account Management,"A user account was created.
+
+Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+New Account:
+	Security ID:		LAB\support-tmp
+	Account Name:		support-tmp
+	Account Domain:		LAB
+
+Attributes:
+	SAM Account Name:	support-tmp
+	Display Name:		<value not set>
+	User Principal Name:	-
+	Home Directory:		<value not set>
+	Password Last Set:	<never>
+	Account Expires:		<never>
+	User Account Control:	
+		Account Disabled
+		'Password Not Required' - Enabled
+		'Normal Account' - Enabled
+
+Additional Information:
+	Privileges		-"
+Information,24/10/2026 20:44:41,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\net.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\cmd.exe
+	Process Command Line:	net user support-tmp /add
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 20:41:41,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		10
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52010
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 20:41:24,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52007
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:41:12,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52006
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:41:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52005
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:40:48,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52004
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:40:36,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52003
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:40:24,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52002
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:40:12,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52001
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 20:40:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			10
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	LAPTOP-7Q2X
+	Source Network Address:	192.168.56.101
+	Source Port:		52000
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 18:00:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		4
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\svc-backup
+	Account Name:		svc-backup
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 17:32:00,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed."
+Information,24/10/2026 17:23:00,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed."
+Information,24/10/2026 17:14:00,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed."
+Information,24/10/2026 17:05:00,Microsoft-Windows-Security-Auditing,4634,Logoff,"An account was logged off.
+
+Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Logon Type:			2
+
+This event is generated when a logon session is destroyed."
+Information,24/10/2026 14:51:20,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		test.user
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC0000064
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 14:50:45,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		lee.novak
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		53105
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 14:50:36,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		kim.osei
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		53104
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 14:50:27,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		admin.chen
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		53103
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 14:50:18,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		53102
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 14:50:09,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		priya.shah
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		53101
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 14:50:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			3
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-19
+	Source Network Address:	10.10.20.119
+	Source Port:		53100
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 13:12:52,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 13:12:40,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			7
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 12:45:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	10.10.20.24
+	Source Port:		49803
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 12:35:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	10.10.20.23
+	Source Port:		49803
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 12:25:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49803
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 12:15:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49803
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 12:05:19,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 12:05:11,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			7
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 12:05:03,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			7
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 11:35:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	10.10.20.24
+	Source Port:		49802
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:32:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:25:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	10.10.20.23
+	Source Port:		49802
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:23:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:15:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49802
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:14:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:05:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49802
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 11:05:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		7
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 10:25:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	10.10.20.24
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 10:15:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	10.10.20.23
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 10:10:00,Microsoft-Windows-Security-Auditing,4728,Security Group Management,"A member was added to a security-enabled global group.
+
+Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Member:
+	Security ID:		LAB\priya.shah
+	Account Name:		CN=Priya Shah,OU=Finance,DC=lab,DC=example
+
+Group:
+	Security ID:		LAB\Finance-Share-Readers
+	Group Name:		Finance-Share-Readers
+	Group Domain:		LAB
+
+Additional Information:
+	Privileges:		-"
+Information,24/10/2026 10:05:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 10:04:00,Microsoft-Windows-Security-Auditing,4738,User Account Management,"A user account was changed.
+
+Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x4F21A
+
+Target Account:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+
+Changed Attributes:
+	Display Name:		Priya Shah (Finance)"
+Information,24/10/2026 10:03:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\mmc.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Windows\system32\mmc.exe"" ""C:\Windows\system32\lusrmgr.msc""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 10:00:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		10
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-IT-01
+	Source Network Address:	10.10.30.5
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 09:55:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49801
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 09:55:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:50:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:45:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:40:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:35:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:35:00,Service Control Manager,7045,None,"A service was installed in the system.
+
+Service Name:  Lab Print Helper
+Service File Name:  ""C:\Program Files\LabPrint\printhelper.exe""
+Service Type:  user mode service
+Service Start Type:  demand start
+Service Account:  LocalSystem"
+Information,24/10/2026 09:30:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:25:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:20:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:15:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	10.10.20.24
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 09:15:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:10:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:05:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	10.10.20.23
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 09:05:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 09:00:00,Microsoft-Windows-Security-Auditing,4625,Logon,"An account failed to log on.
+
+Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Logon Type:			4
+
+Account For Which Logon Failed:
+	Security ID:		NULL SID
+	Account Name:		svc-backup
+	Account Domain:		LAB
+
+Failure Information:
+	Failure Reason:		Unknown user name or bad password.
+	Status:			0xC000006D
+	Sub Status:		0xC000006A
+
+Process Information:
+	Caller Process ID:	0x0
+	Caller Process Name:	-
+
+Network Information:
+	Workstation Name:	SRV-BACKUP-01
+	Source Network Address:	10.10.40.12
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon request fails. It is generated on the computer where access was attempted."
+Information,24/10/2026 08:55:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 08:45:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		SRV-FILE-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	10.10.20.21
+	Source Port:		49800
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 08:39:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:35:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:33:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:32:01,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Information,24/10/2026 08:32:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-04$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\jo.rivera
+	Account Name:		jo.rivera
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-04
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 08:30:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:26:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:24:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:23:01,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Information,24/10/2026 08:23:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-03$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\sam.taylor
+	Account Name:		sam.taylor
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-03
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 08:21:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:17:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:15:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:14:01,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Information,24/10/2026 08:14:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-02$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 08:12:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:08:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:06:00,Microsoft-Windows-Security-Auditing,4688,Process Creation,"A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\explorer.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\System32\userinit.exe
+	Process Command Line:	C:\Windows\Explorer.EXE
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+Information,24/10/2026 08:05:01,Microsoft-Windows-Security-Auditing,4672,Special Logon,"Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Privileges:		SeSecurityPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege"
+Information,24/10/2026 08:05:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\alex.morgan
+	Account Name:		alex.morgan
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-01
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+Information,24/10/2026 07:30:00,Microsoft-Windows-Security-Auditing,4624,Logon,"An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		5
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		NT AUTHORITY\SYSTEM
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."

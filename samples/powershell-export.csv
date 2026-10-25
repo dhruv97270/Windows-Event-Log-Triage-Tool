@@ -1,0 +1,262 @@
+"TimeCreated","Id","LevelDisplayName","ProviderName","MachineName","TaskDisplayName","Message"
+"2026-10-24T14:00:00.0000000+00:00","4624","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Logon","An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+"2026-10-24T13:45:00.0000000+00:00","4624","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Logon","An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+"2026-10-24T13:30:00.0000000+00:00","4624","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Logon","An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		3
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		No
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\priya.shah
+	Account Name:		priya.shah
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-LAB-02
+	Source Network Address:	10.10.20.22
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		NtLmSsp
+	Authentication Package:	NTLM
+	Transited Services:	-
+	Package Name (NTLM only):	NTLM V2
+	Key Length:		128
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
+"2026-10-24T13:20:00.0000000+00:00","4688","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Process Creation","A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\svc-deploy
+	Account Name:		svc-deploy
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+	Token Elevation Type:	%%1938
+	Mandatory Label:		Mandatory Label\Medium Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\CCM\CcmExec.exe
+	Process Command Line:	powershell.exe -NonInteractive -EncodedCommand RwBlAHQALQBEAGEAdABlAA==
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+"2026-10-24T13:07:00.0000000+00:00","7045","Information","Service Control Manager","WS-IT-01.lab.example","None","A service was installed in the system.
+
+Service Name:  Lab Monitor Agent
+Service File Name:  ""C:\Program Files\LabMonitor\agent.exe""
+Service Type:  user mode service
+Service Start Type:  auto start
+Service Account:  LocalSystem"
+"2026-10-24T13:06:00.0000000+00:00","4688","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Process Creation","A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\msiexec.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Windows\System32\msiexec.exe"" /i ""C:\Installers\LabMonitorAgent.msi""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+"2026-10-24T13:04:00.0000000+00:00","4104","Warning","Microsoft-Windows-PowerShell","WS-IT-01.lab.example","Execute a Remote Command","Creating Scriptblock text (1 of 1):
+Get-WinEvent -LogName Security -MaxEvents 50 | Format-Table TimeCreated, Id
+
+ScriptBlock ID: 3f6a1c2e-8b7d-4e0a-9c51-2d7e6b4a9f10
+Path: "
+"2026-10-24T13:02:00.0000000+00:00","4104","Warning","Microsoft-Windows-PowerShell","WS-IT-01.lab.example","Execute a Remote Command","Creating Scriptblock text (1 of 1):
+Get-Service | Where-Object Status -eq Running | Sort-Object DisplayName
+
+ScriptBlock ID: 3f6a1c2e-8b7d-4e0a-9c51-2d7e6b4a9f10
+Path: "
+"2026-10-24T13:01:00.0000000+00:00","4688","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Process Creation","A new process has been created.
+
+Creator Subject:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+
+Target Subject:
+	Security ID:		NULL SID
+	Account Name:		-
+	Account Domain:		-
+	Logon ID:		0x0
+
+Process Information:
+	New Process ID:		0x1f40
+	New Process Name:	C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+	Token Elevation Type:	%%1937
+	Mandatory Label:		Mandatory Label\High Mandatory Level
+	Creator Process ID:	0x1a3c
+	Creator Process Name:	C:\Windows\explorer.exe
+	Process Command Line:	""C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe""
+
+Token Elevation Type indicates the type of token that was assigned to the new process in accordance with User Account Control policy."
+"2026-10-24T13:00:00.0000000+00:00","4624","Information","Microsoft-Windows-Security-Auditing","WS-IT-01.lab.example","Logon","An account was successfully logged on.
+
+Subject:
+	Security ID:		SYSTEM
+	Account Name:		WS-LAB-01$
+	Account Domain:		LAB
+	Logon ID:		0x3E7
+
+Logon Information:
+	Logon Type:		2
+	Restricted Admin Mode:	-
+	Virtual Account:		No
+	Elevated Token:		Yes
+
+Impersonation Level:		Impersonation
+
+New Logon:
+	Security ID:		LAB\admin.chen
+	Account Name:		admin.chen
+	Account Domain:		LAB
+	Logon ID:		0x1A2B3C
+	Linked Logon ID:		0x0
+	Network Account Name:	-
+	Network Account Domain:	-
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2f4
+	Process Name:		C:\Windows\System32\svchost.exe
+
+Network Information:
+	Workstation Name:	WS-IT-01
+	Source Network Address:	127.0.0.1
+	Source Port:		50312
+
+Detailed Authentication Information:
+	Logon Process:		User32
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed."
